@@ -33,3 +33,16 @@ set softtabstop=4 " Number of spaces per Tab
 set ruler " Show row and column ruler information  
 set undolevels=1000  " Number of undo levels 
 set backspace=indent,eol,start  " Backspace behaviour 
+
+"" Colors
+"" syntax enable
+"" set background=dark
+"" colorscheme solarized
+" set t_Cs=  "fix underline for spell checker
+
+"" sonic-pi
+let g:vim_redraw = 1
+
+"" fix flashing
+set visualbell
+set t_vb=
