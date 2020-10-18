@@ -11,6 +11,7 @@
 
 "" General
 set number " Show line numbers 
+set relativenumber " Show relative line numbers
 set linebreak " Break lines at word (requires Wrap lines) 
 set showbreak=… " Wrap-broken line prefix 
 set textwidth=100 " Line wrap (number of cols) 
@@ -33,3 +34,4 @@ set softtabstop=4 " Number of spaces per Tab
 set ruler " Show row and column ruler information  
 set undolevels=1000  " Number of undo levels 
 set backspace=indent,eol,start  " Backspace behaviour 
+set wildmenu " Display completion options
