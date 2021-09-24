@@ -31,6 +31,7 @@ set wildchar=<Tab> wildmenu wildmode=full
 set relativenumber
 :map j gj
 :map k gk
+:syntax on
 
 "" Advanced 
 set ruler " Show row and column ruler information  
