@@ -22,10 +22,13 @@ set ignorecase " Always case-insensitive
 set incsearch " Searches for strings incrementally  
 set autoindent  " Auto-indent new lines 
 set expandtab " Use spaces instead of tabs 
-set shiftwidth=4 " Number of auto-indent spaces 
+set shiftwidth=2 " Number of auto-indent spaces 
 set smartindent  " Enable smart-indent 
 set smarttab  " Enable smart-tabs 
-set softtabstop=4 " Number of spaces per Tab  
+set softtabstop=2 " Number of spaces per Tab  
+set hidden
+set wildchar=<Tab> wildmenu wildmode=full
+set relativenumber
 :map j gj
 :map k gk
 
@@ -39,6 +42,7 @@ set backspace=indent,eol,start  " Backspace behaviour
 "" set background=dark
 "" colorscheme solarized
 " set t_Cs=  "fix underline for spell checker
+color elflord
 
 "" sonic-pi
 let g:vim_redraw = 1
