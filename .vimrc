@@ -11,6 +11,7 @@
 
 "" General
 set number " Show line numbers 
+set relativenumber " Show relative line numbers
 set linebreak " Break lines at word (requires Wrap lines) 
 set showbreak=… " Wrap-broken line prefix 
 set textwidth=100 " Line wrap (number of cols) 
@@ -51,3 +52,4 @@ let g:vim_redraw = 1
 "" fix flashing
 set visualbell
 set t_vb=
+set wildmenu " Display completion options
