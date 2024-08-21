@@ -1,3 +1,5 @@
+scriptencoding utf-8
+
 " set sw=2
 " set expandtab
 " set hlsearch
