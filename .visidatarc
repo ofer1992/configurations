@@ -1,0 +1,10 @@
+def set_sum(lists_column):
+    'Aggregate list/tuple/set-valued cells into a list of unique items (union).'
+    unique_items = set()
+    for item in lists_column:
+        # Check if the cell contains a valid iterable (list, tuple, set)
+        if isinstance(item, (list, tuple, set)):
+            unique_items.update(item)
+    return list(unique_items)
+
+vd.aggregator('set_sum', set_sum, type=list)
