@@ -8,3 +8,9 @@ def set_sum(lists_column):
     return list(unique_items)
 
 vd.aggregator('set_sum', set_sum, type=list)
+
+# open .duckdb/.ddb files via the vdsql (ibis) app bundled with visidata;
+# needs ibis-framework[duckdb] in the vd env, which the uv tool install has.
+import visidata.apps.vdsql  # noqa: F401 -- defines vd.open_vdsql
+for _ext in ('duckdb', 'ddb'):
+    setattr(vd, f'open_{_ext}', vd.open_vdsql)
